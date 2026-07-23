@@ -11,6 +11,7 @@
 | Se você quer... | Abra primeiro |
 |---|---|
 | iniciar um projeto Go + React agora | [Guia de Inicialização](startProjects.md) |
+| revisar ou alterar código com critérios objetivos | [Código Limpo](skills/codigo-limpo/references/codigo-limpo.md) → [Skill executável](skills/codigo-limpo/SKILL.md) |
 | entender um bug entre browser e API | [Protocolo HTTP](backend/protocolo-http.md) → [Redes](redes/redes-de-computadores.md) |
 | desenhar um contrato de API | [APIs REST](backend/apis-rest.md) |
 | revisar segurança antes de produção | [Segurança da Informação](seguranca/seguranca-da-informacao.md) |
@@ -47,6 +48,12 @@ Ao terminar, você deve conseguir seguir uma requisição do DNS ao banco e loca
 4. [Microsserviços](backend/microsservicos.md) — fronteiras, sagas, resiliência e os sinais reais para extrair um serviço.
 
 Essa ordem é intencional: microsserviços usam rede, mensageria e observabilidade como fundação. Começar por eles inverte causa e solução.
+
+### 2.5. Escreva e revise com critérios explícitos
+
+1. [Código Limpo — Harness de Revisão](skills/codigo-limpo/references/codigo-limpo.md) — nomes, funções, erros, duplicação, testes e dinheiro com severidades observáveis.
+2. [Padrões de Engenharia do ecosystem-jotaja](skills/codigo-limpo/references/padroes-engenharia-ecosystem-jotaja.md) — integração entre Código Limpo e Clean Architecture.
+3. [Skill Código Limpo](skills/codigo-limpo/SKILL.md) — fluxo reutilizável para aplicar os critérios antes de implementar, refatorar ou revisar.
 
 ### 3. Entregue com repetibilidade
 
@@ -89,6 +96,14 @@ Capacidade e custo formam um ciclo: estimar → publicar → medir → recalibra
 |---|---|
 | [seguranca-da-informacao.md](seguranca/seguranca-da-informacao.md) | como reduzir risco em todas as camadas? |
 | [redes-de-computadores.md](redes/redes-de-computadores.md) | como os bytes chegam e onde o caminho quebra? |
+
+### Qualidade e skills
+
+| Material | Pergunta central |
+|---|---|
+| [codigo-limpo.md](skills/codigo-limpo/references/codigo-limpo.md) | quais sinais bloqueiam merge ou exigem correção antes do commit? |
+| [padroes-engenharia-ecosystem-jotaja.md](skills/codigo-limpo/references/padroes-engenharia-ecosystem-jotaja.md) | como Código Limpo e Clean Architecture se complementam? |
+| [codigo-limpo/SKILL.md](skills/codigo-limpo/SKILL.md) | como executar essa revisão de forma consistente? |
 
 ### DevOps
 
@@ -154,6 +169,7 @@ O mapa mostra pré-requisitos conceituais, não uma ordem rígida. Volte pelos l
 - [ ] Aplicação local funciona e respeita DTOs, sessão e fronteiras
 - [ ] Consigo diagnosticar DNS → TCP/TLS → HTTP → API → banco
 - [ ] API tem contrato, limites, timeouts, logs e checklist de segurança
+- [ ] Mudanças passam pelo harness de Código Limpo e respeitam as fronteiras arquiteturais
 - [ ] Imagem Docker é mínima, não-root e encerra graciosamente
 - [ ] Pipeline testa, produz artefato imutável e faz rollback
 - [ ] Infraestrutura é declarativa, revisada e sem segredos no state/repo

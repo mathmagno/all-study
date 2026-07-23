@@ -1,0 +1,7 @@
+interface:
+  display_name: "Código Limpo"
+  short_description: "Revisão executável antes de alterar código"
+  default_prompt: "Use $codigo-limpo antes de implementar, refatorar ou revisar código."
+
+policy:
+  allow_implicit_invocation: true
