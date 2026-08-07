@@ -1,4 +1,4 @@
-package mathdev.example.produtosapi;
+package mathdev.products;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

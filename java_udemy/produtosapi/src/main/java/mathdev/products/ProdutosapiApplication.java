@@ -1,4 +1,4 @@
-package mathdev.example.produtosapi;
+package mathdev.products;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,5 +9,4 @@ public class ProdutosapiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ProdutosapiApplication.class, args);
 	}
-
 }
